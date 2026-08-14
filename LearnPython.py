@@ -41,4 +41,26 @@ match service: #ใช้คำสั่ง match เพื่อตรวจส
     
 
 
+number = 100
+while number < 10:
+    number += 1
+    print(number)
+print("จบการทำงานของโปรแกรม")
 
+
+
+
+#โปรแกรมแม่สูตรคูณ
+numbers = int(input("กรุณาป้อนตัวเลขที่ต้องการดูแม่สูตรคูณ: ")) #ป้อนตัวเลขที่ต้องการดูแม่สูตรคูณ
+
+for n in range(1,13): #ใช้คำสั่ง for เพื่อวนลูปตั้งแต่ 1 ถึง 12
+    print(numbers,"x",n,"=",numbers*n)
+
+
+#break and continue
+for counter in range(1, 11): #ใช้คำสั่ง for เพื่อวนลูปตั้งแต่ 1 ถึง 10
+    if counter==5: #ถ้า counter เท่ากับ 5 จะทำงานคำสั่ง break
+        break #คำสั่ง break จะหยุดการทำงานของลูปทันทีเมื่อนับถึง 5 , แต่ถ้าเป็น continue จะข้ามการทำงานของลูปในรอบนั้นและไปทำงานรอบถัดไปคือข้ามเลข 5
+    print(counter) #แสดงค่า counter
+
+print("จบการทำงานของโปรแกรม")
